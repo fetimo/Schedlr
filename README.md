@@ -6,6 +6,10 @@ Aim
 ----
 To provide an easy way to organise activities from a pre-defined list on your iOS device.
 
+Installation
+------------
+As the project nears completion I will package binary versions of Schedlr for easy download. Until then, you can download the files and find index.html in the www folder. Open this in a Webkit-based browser and you can test the app.
+
 Created By
 ----------
 Tim Stone (www.fetimo.com)
