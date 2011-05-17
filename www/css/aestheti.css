@@ -1,0 +1,12 @@
+html {
+	font-family:'Helvetica Neue';
+}
+
+h2 {
+	font-size: 1.3em;
+	margin-top: 10px;
+}
+
+.description {
+	padding: 5%;
+}
