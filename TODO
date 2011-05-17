@@ -1,0 +1,6 @@
+mplement storing each chosen event in localStorage (push to array?)
+ 4_ Find a more elegant way to reload the page without using 'reload();'
+ _/ Use ext. setup or launch: not both! So sort out inconsistencies there
+ 6_ Optimise
+ 7_ Add tab bar for sorting by different categories ('category' or 'type') -- scrapped
+ 8_ Instead of refreshing app, simply flip between calendar and list view?
