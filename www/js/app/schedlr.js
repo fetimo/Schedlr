@@ -8,7 +8,13 @@ Ext.setup({
 //this portion of code founded on @nelstrom's awesome screencast: http://vimeo.com/19245335
 
 //if(localStorage.getItem("chosenEvents") != "true") {
-
+	
+	//this is a horrible way to display this information, think of something better
+	if(localStorage.getItem("firstRun") != "false") {
+		alert('Choose the events that you\'d like to attend at this year\'s Ars Electronica festival.');
+		localStorage.setItem("firstRun", "false");
+	}
+	
 	Schedlr = new Ext.Application({
 								  
 		defaultTarget: "viewport",
@@ -22,7 +28,9 @@ Ext.setup({
 			
 			var amendEvent = function() {
 				alert('clicked');
-				Schedlr.Event.changeAttendance();
+				//use proxy to get id of event and set attending to true
+								
+				event.changeAttendance(id);
 				alert('function called and finished executing');
 				returnHome();
 			};
@@ -71,20 +79,37 @@ Ext.setup({
 				layout: 'fit',
 				items: [Schedlr.listPanel],
 				dockedItems: [{
-					xtype: 'toolbar',
-					items: [
-					{
-						xtype:'spacer'
+					dock: 'bottom',
+					xtype: 'tabbar',
+					layout: {
+						pack: 'center'
 					},
-					{
-						ui:'confirm', 
-						text:'Finish choosing',
-						handler: 
-							function() {
-								//init calendar view here
-								//localStorage.setItem("chosenEvents","true");
-								//this.refresh;
-							}
+					items: [
+						{
+							iconMask: true,
+							title: 'More',
+							iconCls: 'home',
+							text: 'Calendar',
+							handler: 
+								function() {
+									alert('I WAS CLICKED!! THIS IS THE HAPPIEST DAY OF MY BUILD :D');
+									//init edit (default) view here
+									//localStorage.setItem("chosenEvents","true");
+									//this.refresh;
+								}
+						},
+						{
+							iconMask: true,
+							title: 'More',
+							iconCls: 'add',
+							text: 'Edit',
+							handler: 
+								function() {
+									alert('I WAS CLICKED!! THIS IS THE SECOND HAPPIEST DAY OF MY BUILD :D');
+									//init calendar view here
+									//localStorage.setItem("chosenEvents","true");
+									//this.refresh;
+								}
 						}
 					]
 				}]

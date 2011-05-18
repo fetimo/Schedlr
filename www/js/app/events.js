@@ -13,37 +13,53 @@ Ext.regModel('Event', {
 		{name: 'attending',		type: 'boolean',	defaultValue: false},
 		{name: 'id',			type: 'int'}
 	],
-
+	
+	proxy: {
+		type: 'localstorage',
+		id:	'eventsProxy'
+	},
+	
 	changeAttendance: function() {
-				
+	//this function loosely based on an example given in the Sencha Touch API docs on 'Model'
+		alert('changeAttendance function called');
+		
 		//set variable
 		var oldStatus = this.get('attending');
 		
 		alert(oldStatus);
 		
 		//if already attending (aka true), make false and vice versa
-		if(oldStatus = true){	
+		if(oldStatus === true){	
 			newStatus = false;
 		} else {
 			newStatus = true;
 		}
 		
 		//set variable as new value
-		this.set('attending', newName);
+		this.set('attending', newStatus);
+		
+		alert(newStatus);
 	}
-	
 });
 
 //populate store with data, mmm data
 Schedlr.ListStore = new Ext.data.Store({
 	model: 'Event',
-	sorters: 'type',
+	//sort by type (e.g. conference) and then alphabetise within each category
+	sorters: [
+		{ 
+			property: 'type'
+		},
+		{
+			property: 'name'
+		}
+	],
 	getGroupString : function(record) {
-		//for some reason this if else statement doesn't work
-		if(record.get('type') === "Mixed" || "Music") {
-			return record.get('type');
+		var type = record.get('type');
+		if(type === "Mixed" || type === "Music") {
+			return type;
 		} else {
-			return record.get('type') + "s";
+			return type + "s";
 		}
 	},
 	data: [
@@ -56,7 +72,6 @@ Schedlr.ListStore = new Ext.data.Store({
 			location: "Hauptplatz, Tabakfabrik Linz", 
 			category: "Opening",
 			type: "Mixed",
-			attending: false,
 			id: "101"
 		},
 		{ 
@@ -68,7 +83,6 @@ Schedlr.ListStore = new Ext.data.Store({
 			location: "Tabakfabrik Linz", 
 			category: "Opening", 
 			type: "Music",
-			attending: false,
 			id: "102"
 		},
 		{ 
@@ -193,7 +207,7 @@ Schedlr.ListStore = new Ext.data.Store({
 		   id: "113"
 		   },
 		   { 
-		   name: "Dies irae - Rembering 108 EB",	
+		   name: "Dies irae - Remembering 108 EB",	
 		   description: "Four internal combustion engines hang from the ceiling, awaiting their resuscitation. They’ll be fired up only once during the festival and join their voices in a droning, exhaust-belching song of lamentation. A reminiscence of “108 EB – Chamber Music for Four Motors and Service Personnel,” the legendary project with which Hubert Lepka and Lawine Torren created a sensation in 1989.", 
 		   timeStart: "1500", 
 		   timeFinish: "1830", 
@@ -283,63 +297,3 @@ Schedlr.ListStore = new Ext.data.Store({
 		   },
 	]
 });
-
-
-
-
-
-/*
-Ext.regModel('Event', {
-
-	fields: [
-		{name: 'name', type: 'string'},
-		{name: 'description', type: 'string'},
-		{name: 'time-start', type: 'int'},
-		{name: 'time-finish', type: 'int'},
-		{name: 'date', type: 'int'},
-		{name: 'location', type: 'string'},
-		{name: 'category', type: 'string'},
-		{name: 'id', type: 'int'}
-	],
-	
-	changeAttendance: function() {
-		
-		//set variable
-		var oldStatus = this.get('attending');
-		
-		//if already attending (aka true), make false and vice versa
-		if(oldStatus = true){	
-			newStatus = false;
-		} else {
-			newStatus = true;
-		}
-		
-		//set variable as new value
-		this.set('attending', newName);
-	}
-});
-
-//read json ( http://www.sencha.com/blog/using-the-data-package-in-sencha-touch )
-var events = new Ext.DataView({
-	store: new Ext.data.Store({
-		model: 'Event',
-		proxy: {
-			type: 'ajax',
-			url: 'events.json',
-			reader: {
-				type: 'json',
-				root: 'category',
-				record: 'event'
-			}
-		}
-	}),
-	tpl: new Ext.XTemplate(
-		'<tpl for=".">',
-			'<div class="">',
-				'<div class="button">lol</div>',
-			'</div>',
-		'</tpl>'
-	),
-	fullscreen: true
-});
-*/
