@@ -13,5 +13,5 @@ _/ Use ext. setup or launch: not both! So sort out inconsistencies there
 -- Add tab bar for sorting by different categories ('category' or 'type')
 8_ Instead of refreshing app, simply flip between calendar and list view?
 9_ Make calendar view
-10_ Change text to icons
+10_ Change text to icons on tab bar
 11_ Add recommended events feature

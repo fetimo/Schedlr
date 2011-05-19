@@ -51,13 +51,27 @@ Ext.setup({
 				tpl: '<h2>{name}</h2><div class="description">{description}</div>',
 				dockedItems: [Schedlr.detailToolbar]
 			});
-									  
+			
+			
+			Schedlr.indexPanel = new Ext.Panel({
+				id: 'indexpanel',
+				items: [
+					{ui:'', text: 'Conferences'},
+					{ui:'', text: 'Exhibitions'},
+					{ui:'', text: 'Films'},
+					{ui:'', text: 'Mixed'},
+					{ui:'', text: 'Music'},
+					{ui:'', text: 'Workshops'}
+				]
+			});
+			
+			
 			Schedlr.listPanel = new Ext.List({
 				id: 'indexlist',
 				store: Schedlr.ListStore,
 				itemTpl: '<div class="list"><p>{name}</p></div>',
 				grouped: true,
-				onItemDisclosure: function(record){ //called when arrow touched
+				onItemDisclosure: function(record){ //called when arrow tapped
 					
 					//set name of event as title, if too long then shorten and add ellipsis
 					var event = record.data.name;
@@ -74,44 +88,74 @@ Ext.setup({
 				}
 			});
 			
+			Schedlr.tabBar = new Ext.TabPanel ({
+				tabBar: {
+					dock: 'bottom',
+					layout: 'vbox',
+					layout: {
+						pack: 'center'
+					}
+				},
+				cardSwitchAnimation: {
+					type: 'slide',
+					cover: true
+				},
+				defaults: {
+					scroll: 'vertical'
+				},
+				items: [
+					{
+						//iconMask: true,
+						title: 'Calendar',
+						iconCls: 'calendar',
+						handler: 
+							function() {
+								alert('I WAS CLICKED! THIS IS THE HAPPIEST MOMENT OF MY BUILD :D');
+								//init edit (default) view here
+								//localStorage.setItem("chosenEvents","true");
+								//this.refresh;
+						}
+					},
+					{
+						//iconMask: true,
+						title: 'Edit',
+						iconCls: 'add',
+						handler: 
+							function() {
+								alert('I WAS CLICKED! THIS IS THE SECOND HAPPIEST MOMENT OF MY BUILD :D');
+								//init calendar view here
+								//localStorage.setItem("chosenEvents","true");
+								//this.refresh;
+						}
+					}
+				]
+			});
+			
 			Schedlr.listWrapper = new Ext.Panel({
 				id: 'listwrapper',
 				layout: 'fit',
 				items: [Schedlr.listPanel],
 				dockedItems: [{
-					dock: 'bottom',
 					xtype: 'tabbar',
+					ui: 'dark',
 					layout: {
 						pack: 'center'
 					},
-					items: [
-						{
-							iconMask: true,
-							title: 'More',
-							iconCls: 'home',
-							text: 'Calendar',
-							handler: 
-								function() {
-									alert('I WAS CLICKED!! THIS IS THE HAPPIEST DAY OF MY BUILD :D');
-									//init edit (default) view here
-									//localStorage.setItem("chosenEvents","true");
-									//this.refresh;
-								}
-						},
-						{
-							iconMask: true,
-							title: 'More',
-							iconCls: 'add',
-							text: 'Edit',
-							handler: 
-								function() {
-									alert('I WAS CLICKED!! THIS IS THE SECOND HAPPIEST DAY OF MY BUILD :D');
-									//init calendar view here
-									//localStorage.setItem("chosenEvents","true");
-									//this.refresh;
-								}
+					items: [{
+						title: 'Calendar',
+						iconCls: 'calendar',
+						handler: function(){
+							alert('clicked on calendar');
 						}
-					]
+					},
+					{
+						title: 'Edit',
+						iconCls: 'add',
+						handler: function() {
+							alert('clicked on edit');
+						}
+					}],
+					dock: 'bottom'
 				}]
 			});
 			
@@ -120,7 +164,7 @@ Ext.setup({
 				fullscreen: true,
 				layout: 'card',
 				cardSwitchAnimation: 'slide',
-				items: [Schedlr.listWrapper, Schedlr.detailPanel]
+				items: [Schedlr.listWrapper, Schedlr.tabBar, Schedlr.detailPanel]
 			});
 		}
 	});
