@@ -88,49 +88,6 @@ Ext.setup({
 				}
 			});
 			
-			Schedlr.tabBar = new Ext.TabPanel ({
-				tabBar: {
-					dock: 'bottom',
-					layout: 'vbox',
-					layout: {
-						pack: 'center'
-					}
-				},
-				cardSwitchAnimation: {
-					type: 'slide',
-					cover: true
-				},
-				defaults: {
-					scroll: 'vertical'
-				},
-				items: [
-					{
-						//iconMask: true,
-						title: 'Calendar',
-						iconCls: 'calendar',
-						handler: 
-							function() {
-								alert('I WAS CLICKED! THIS IS THE HAPPIEST MOMENT OF MY BUILD :D');
-								//init edit (default) view here
-								//localStorage.setItem("chosenEvents","true");
-								//this.refresh;
-						}
-					},
-					{
-						//iconMask: true,
-						title: 'Edit',
-						iconCls: 'add',
-						handler: 
-							function() {
-								alert('I WAS CLICKED! THIS IS THE SECOND HAPPIEST MOMENT OF MY BUILD :D');
-								//init calendar view here
-								//localStorage.setItem("chosenEvents","true");
-								//this.refresh;
-						}
-					}
-				]
-			});
-			
 			Schedlr.listWrapper = new Ext.Panel({
 				id: 'listwrapper',
 				layout: 'fit',
@@ -142,17 +99,23 @@ Ext.setup({
 						pack: 'center'
 					},
 					items: [{
-						title: 'Calendar',
+						text: 'Calendar',
 						iconCls: 'calendar',
+						iconMask: true,
+						ui: 'plain',
 						handler: function(){
-							alert('clicked on calendar');
+							//alert('clicked on calendar');
+							ListDemo.Viewport.setActiveItem('calendar', {type:'fade', duration:500});
 						}
 					},
 					{
-						title: 'Edit',
+						text: 'Edit',
 						iconCls: 'add',
+						iconMask: true,
+						ui: 'plain',
 						handler: function() {
-							alert('clicked on edit');
+							//alert('clicked on edit');
+							ListDemo.Viewport.setActiveItem('listwrapper', {type:'fade', duration:500});
 						}
 					}],
 					dock: 'bottom'
@@ -164,7 +127,7 @@ Ext.setup({
 				fullscreen: true,
 				layout: 'card',
 				cardSwitchAnimation: 'slide',
-				items: [Schedlr.listWrapper, Schedlr.tabBar, Schedlr.detailPanel]
+				items: [Schedlr.listWrapper, Schedlr.detailPanel]
 			});
 		}
 	});
