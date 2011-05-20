@@ -49,9 +49,33 @@ Ext.setup({
 				id: 'detailpanel',
 				scroll: 'vertical',
 				tpl: '<h2>{name}</h2><div class="description">{description}</div>',
-				dockedItems: [Schedlr.detailToolbar]
-			});
-			
+				dockedItems: [Schedlr.detailToolbar, 
+					{
+						xtype: 'tabbar',
+						dock: 'bottom',
+						ui: 'dark',
+						layout: {
+							pack: 'center'
+					},
+						items: [{
+							text: 'Calendar',
+							iconCls: 'calendar2',
+							iconMask: true,
+							handler: function(){
+								//alert('clicked on calendar');
+								ListDemo.Viewport.setActiveItem('calendar', {type:'fade', duration:500});
+							}
+						},
+						{
+							text: 'Edit',
+							iconCls: 'calendar_add',
+							iconMask: true,
+							handler: function() {
+								//alert('clicked on edit');
+								ListDemo.Viewport.setActiveItem('listwrapper', {type:'fade', duration:500});
+						}
+					}
+				]}]});
 			
 			Schedlr.indexPanel = new Ext.Panel({
 				id: 'indexpanel',
@@ -100,7 +124,7 @@ Ext.setup({
 					},
 					items: [{
 						text: 'Calendar',
-						iconCls: 'calendar',
+						iconCls: 'calendar2',
 						iconMask: true,
 						ui: 'plain',
 						handler: function(){
@@ -110,7 +134,7 @@ Ext.setup({
 					},
 					{
 						text: 'Edit',
-						iconCls: 'add',
+						iconCls: 'calendar_add',
 						iconMask: true,
 						ui: 'plain',
 						handler: function() {
