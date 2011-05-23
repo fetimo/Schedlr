@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1C05A73613842C9300EEFC48 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 1C05A73513842C9300EEFC48 /* TODO */; };
 		1C05A73813842CA000EEFC48 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C05A73713842CA000EEFC48 /* README.md */; };
+		1CB1EBC9138ADDA8000E2B60 /* sencha-touch-debug.js in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1EBC8138ADDA8000E2B60 /* sencha-touch-debug.js */; };
+		1CB1EBCB138AE09D000E2B60 /* event_item.js in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1EBCA138AE09D000E2B60 /* event_item.js */; };
+		1CB1EBCD138AE36D000E2B60 /* store.js in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1EBCC138AE36D000E2B60 /* store.js */; };
 		1D3623260D0F684500981E51 /* SchedlrAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* SchedlrAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -57,6 +60,9 @@
 /* Begin PBXFileReference section */
 		1C05A73513842C9300EEFC48 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		1C05A73713842CA000EEFC48 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1CB1EBC8138ADDA8000E2B60 /* sencha-touch-debug.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "sencha-touch-debug.js"; path = "www/js/lib/sencha/sencha-touch-debug.js"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		1CB1EBCA138AE09D000E2B60 /* event_item.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = event_item.js; path = www/js/app/models/event_item.js; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		1CB1EBCC138AE36D000E2B60 /* store.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = store.js; path = www/js/app/stores/store.js; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* SchedlrAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchedlrAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* SchedlrAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchedlrAppDelegate.m; sourceTree = "<group>"; };
@@ -134,6 +140,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				1CB1EBCC138AE36D000E2B60 /* store.js */,
+				1CB1EBCA138AE09D000E2B60 /* event_item.js */,
+				1CB1EBC8138ADDA8000E2B60 /* sencha-touch-debug.js */,
 				1C05A73713842CA000EEFC48 /* README.md */,
 				1C05A73513842C9300EEFC48 /* TODO */,
 				301BF56E109A69640062928A /* www */,
@@ -348,6 +357,9 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* SchedlrAppDelegate.m in Sources */,
+				1CB1EBC9138ADDA8000E2B60 /* sencha-touch-debug.js in Sources */,
+				1CB1EBCB138AE09D000E2B60 /* event_item.js in Sources */,
+				1CB1EBCD138AE36D000E2B60 /* store.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,12 +380,12 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Schedlr_Prefix.pch;
 				INFOPLIST_FILE = "Schedlr-Info.plist";
 				PRODUCT_NAME = Schedlr;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -386,7 +398,7 @@
 				GCC_PREFIX_HEADER = Schedlr_Prefix.pch;
 				INFOPLIST_FILE = "Schedlr-Info.plist";
 				PRODUCT_NAME = Schedlr;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
