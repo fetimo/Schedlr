@@ -373,6 +373,7 @@
 				GCC_PREFIX_HEADER = Schedlr_Prefix.pch;
 				INFOPLIST_FILE = "Schedlr-Info.plist";
 				PRODUCT_NAME = Schedlr;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -385,6 +386,7 @@
 				GCC_PREFIX_HEADER = Schedlr_Prefix.pch;
 				INFOPLIST_FILE = "Schedlr-Info.plist";
 				PRODUCT_NAME = Schedlr;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
