@@ -18,7 +18,6 @@ Schedlr = new Ext.Application({
 							  
 	defaultTarget: "viewport",
 	name: "Schedlr",
-	
 	launch: function() {
 		//render view
 		this.views.viewport = new this.views.Viewport();

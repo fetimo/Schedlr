@@ -1,4 +1,3 @@
-
 //populate store with data, mmm data
 var data = {
 	text: 'Categories',
