@@ -3,6 +3,12 @@ Schedlr.views.Viewport = Ext.extend(Ext.NestedList, {
 	title: 'Categories',
 	store: Schedlr.event_store,
 	useTitleAsBackText: false,
+	toolbar: {
+		items: [
+			{xtype: 'spacer'},
+			{xtype: 'button', ui: 'confirm', hidden: true, text:'<a href="">Attend</a>'}
+		]
+	},
 	getDetailCard: function(item, parent) {
         var itemData = item.attributes.record.data,
 		parentData = parent.attributes.record.data,
@@ -19,22 +25,12 @@ Schedlr.views.Viewport = Ext.extend(Ext.NestedList, {
 			this.backButton.setText(parentData.text);
 		}
 		
-		var attendButton = [
-			{xtype: 'spacer'},
-			{xtype: 'button', ui: 'confirm', text:'<a href="">Attend</a>'}
-		];
-		
-		if(sessionStorage.getItem('btnAdded') != 'true') {
-			this.toolbar.add(1006, attendButton);
-			sessionStorage.setItem('btnAdded', 'true');
+		var interceptAndHide = function() {
+			this.up('toolbar').getComponent(2).setVisible(false);
 		}
 		
-		//var interceptBack = this.;
-		
-		//this.backButton.on('tap', interceptBack);
-		for (item in this.toolbar.items) {
-			alert(item);
-		}
+		this.toolbar.getComponent(2).setVisible(true);
+		this.backButton.on('tap', interceptAndHide);
 		
 		detailCard.update(itemData);
 		return detailCard;
