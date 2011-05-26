@@ -1,6 +1,6 @@
 Schedlr.views.List = new Ext.NestedList({
 	id: 'list',
-	title: 'Categories',
+	title: 'Events',
 	iconCls: 'calendar_add',
 	layout: 'card',
 	store: Schedlr.event_store,
@@ -44,6 +44,45 @@ Schedlr.views.List = new Ext.NestedList({
     }
 });
 
+var dateSelector = new Ext.SegmentedButton({
+	centered: true,
+	margin: '15 0 0 0',
+	items: [
+		{
+			text: '3/9',
+			pressed: true
+		},
+		{
+			text: '4/9'
+		},
+		{
+			text: '5/9'
+		},
+		{
+			text: '6/9'
+		},
+		{
+			text: '7/9'
+		}
+	]
+});
+
+Schedlr.views.Itinerary = new Ext.Panel({
+	title: 'Calendar',
+	iconCls: 'calendar2',
+	layout: 'vbox',
+	dockedItems: [
+		{
+			dock: 'top',
+			xtype: 'toolbar',
+			ui: 'light',
+			title: 'Your Itinerary'
+		}
+	],
+	items: dateSelector	
+});
+
+
 Schedlr.views.Tab = new Ext.TabPanel({
 	id: 'listwrapper',
 	layout: 'fit',
@@ -54,11 +93,7 @@ Schedlr.views.Tab = new Ext.TabPanel({
 		}
 	},
 	items: [
-		Schedlr.views.List,
-		{
-			title: 'Calendar',
-			iconCls: 'calendar2'
-		},
+		Schedlr.views.Itinerary,
 		Schedlr.views.List
 	]
 });

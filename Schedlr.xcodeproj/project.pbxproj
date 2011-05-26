@@ -21,7 +21,7 @@
 		3009C2AD127B894C007F4BC6 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3009C2AB127B894C007F4BC6 /* icon@2x.png */; };
 		3009C2B2127B897D007F4BC6 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 3009C2B0127B897D007F4BC6 /* Default-Landscape.png */; };
 		3009C2B3127B897D007F4BC6 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 3009C2B1127B897D007F4BC6 /* Default-Portrait.png */; };
-		301BF552109A68D80062928A /* libPhoneGapLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libPhoneGapLib.a */; };
+		301BF552109A68D80062928A /* libPhoneGap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libPhoneGap.a */; };
 		301BF570109A69640062928A /* www in Resources */ = {isa = PBXBuildFile; fileRef = 301BF56E109A69640062928A /* www */; };
 		301BF5B5109A6A2B0062928A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5B4109A6A2B0062928A /* AddressBook.framework */; };
 		301BF5B7109A6A2B0062928A /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5B6109A6A2B0062928A /* AddressBookUI.framework */; };
@@ -41,6 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1C26C404138EEB85003E6312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* PhoneGapLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 303258D8136B2C9400982B63;
+			remoteInfo = PhoneGap;
+		};
 		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 301BF52D109A57CC0062928A /* PhoneGapLib.xcodeproj */;
@@ -100,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				301BF552109A68D80062928A /* libPhoneGapLib.a in Frameworks */,
+				301BF552109A68D80062928A /* libPhoneGap.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -222,7 +229,8 @@
 		301BF52E109A57CC0062928A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				301BF535109A57CC0062928A /* libPhoneGapLib.a */,
+				301BF535109A57CC0062928A /* libPhoneGap.a */,
+				1C26C405138EEB85003E6312 /* PhoneGap.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,10 +296,17 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		301BF535109A57CC0062928A /* libPhoneGapLib.a */ = {
+		1C26C405138EEB85003E6312 /* PhoneGap.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PhoneGap.framework;
+			remoteRef = 1C26C404138EEB85003E6312 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		301BF535109A57CC0062928A /* libPhoneGap.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libPhoneGapLib.a;
+			path = libPhoneGap.a;
 			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
