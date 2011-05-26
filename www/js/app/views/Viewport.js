@@ -1,12 +1,18 @@
-Schedlr.views.Viewport = Ext.extend(Ext.NestedList, {
-	fullscreen: true,
+Schedlr.views.List = new Ext.NestedList({
+	id: 'list',
 	title: 'Categories',
+	iconCls: 'calendar_add',
+	layout: 'card',
 	store: Schedlr.event_store,
 	useTitleAsBackText: false,
 	toolbar: {
 		items: [
 			{xtype: 'spacer'},
-			{xtype: 'button', ui: 'confirm', hidden: true, text:'<a href="">Attend</a>'}
+			{xtype: 'button', ui: 'confirm', hidden: true, text:'Attend', 
+				handler: function() {
+					//add to list of events being attended
+				}
+			}
 		]
 	},
 	getDetailCard: function(item, parent) {
@@ -16,7 +22,8 @@ Schedlr.views.Viewport = Ext.extend(Ext.NestedList, {
 		detailCard = new Ext.Panel({
 			scroll: 'vertical',
 			styleHtmlContent: true,
-			tpl: ["<h2>{text}</h2>","{info}"]
+			tpl: ["<h2>{text}</h2>","{info}"],
+			title: 'Event'
 		});
 		
 		if(parentData.text.length > 6){
@@ -25,14 +32,39 @@ Schedlr.views.Viewport = Ext.extend(Ext.NestedList, {
 			this.backButton.setText(parentData.text);
 		}
 		
+		//show the attend button when on leaf, hide when back button is tapped
 		var interceptAndHide = function() {
 			this.up('toolbar').getComponent(2).setVisible(false);
 		}
-		
 		this.toolbar.getComponent(2).setVisible(true);
 		this.backButton.on('tap', interceptAndHide);
 		
 		detailCard.update(itemData);
 		return detailCard;
     }
+});
+
+Schedlr.views.Tab = new Ext.TabPanel({
+	id: 'listwrapper',
+	layout: 'fit',
+	tabBar: {
+		dock: 'bottom',
+		layout: {
+			pack: 'center'
+		}
+	},
+	items: [
+		Schedlr.views.List,
+		{
+			title: 'Calendar',
+			iconCls: 'calendar2'
+		},
+		Schedlr.views.List
+	]
+});
+
+Schedlr.views.Viewport = Ext.extend(Ext.Panel, {
+	fullscreen: true,
+	layout: 'card',
+	items: [Schedlr.views.Tab]
 });
