@@ -3,7 +3,7 @@ Schedlr.views.List = new Ext.NestedList({
 	title: 'Events',
 	iconCls: 'calendar_add',
 	layout: 'card',
-	store: Schedlr.event_store,
+	store: Schedlr.stores.event_store,
 	useTitleAsBackText: false,
 	toolbar: {
 		items: [
@@ -11,6 +11,23 @@ Schedlr.views.List = new Ext.NestedList({
 			{xtype: 'button', ui: 'confirm', hidden: true, text:'Attend', 
 				handler: function() {
 					//add to list of events being attended
+					console.log('clicked');
+					if (Schedlr.stores.event_store.getProxy().extraParams.attending === true) {
+						console.log('if start');
+						
+						Schedlr.stores.event_store.getProxy().extraParams.attending = false;
+						
+						console.log('if end');
+					} else {
+						console.log('else start');
+						
+						Schedlr.stores.event_store.getProxy().extraParams.attending = true;
+						
+						console.log('else end');
+					}
+					Schedlr.stores.event_store.read();
+					
+					console.log('finish');
 				}
 			}
 		]
@@ -45,7 +62,6 @@ Schedlr.views.List = new Ext.NestedList({
 });
 
 var dateSelector = new Ext.SegmentedButton({
-	centered: true,
 	margin: '15 0 0 0',
 	items: [
 		{
@@ -68,9 +84,10 @@ var dateSelector = new Ext.SegmentedButton({
 });
 
 Schedlr.views.Itinerary = new Ext.Panel({
-	title: 'Calendar',
+	title: 'Itinerary',
 	iconCls: 'calendar2',
 	layout: 'vbox',
+	scroll: 'vertical',
 	dockedItems: [
 		{
 			dock: 'top',
@@ -81,7 +98,6 @@ Schedlr.views.Itinerary = new Ext.Panel({
 	],
 	items: dateSelector	
 });
-
 
 Schedlr.views.Tab = new Ext.TabPanel({
 	id: 'listwrapper',
