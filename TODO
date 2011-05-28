@@ -7,11 +7,12 @@ _/ = completed
 _/ Get store of events to display in list
 _/ Sort store into sections of site
 3_ Implement storing each chosen event in localStorage (push to array?)
-4_ Find a more elegant way to reload the page without using 'reload();'
+_/ Find a more elegant way to reload the page without using 'reload();'
 _/ Use ext. setup or launch: not both! So sort out inconsistencies there
 6_ Optimise
 -- Add tab bar for sorting by different categories ('category' or 'type')
 8_ Instead of refreshing app, simply flip between calendar and list view?
-9_ Make calendar view
-10_ Change text to icons on tab bar
-11_ Add recommended events feature
+-- Make calendar view
+_/ Change text to icons on tab bar
+-- Add recommended events feature
+12_ Sort alphabetically

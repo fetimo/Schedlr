@@ -83,6 +83,8 @@ var dateSelector = new Ext.SegmentedButton({
 	]
 });
 
+localStorage.setItem('person', 'sean');
+
 Schedlr.views.Itinerary = new Ext.Panel({
 	title: 'Itinerary',
 	iconCls: 'calendar2',

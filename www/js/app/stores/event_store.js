@@ -2,15 +2,17 @@ Schedlr.stores.event_store = new Ext.data.TreeStore({
 	model: 'Events',
 	root: data,
 	storeId: 'eventStoreId',
-	sorters: {
-		property: 'text'
-	},
 	proxy: {
-		type: 'ajax',
+		type: 'localstorage',
+		id: 'eventsAttending',
 		url: 'store.js',
 		reader: {
 			type: 'tree',
 			root: 'items'
+		},
+		/*sorters: {
+			property: 'text',
+			root: 'data'
 		},
 		extraParams: {
 			format: 'json'
@@ -20,6 +22,8 @@ Schedlr.stores.event_store = new Ext.data.TreeStore({
 				console.error('Failure Notification', response.responseText);
 				Ext.Msg.alert('Loading failed', response.statusText);
 			}
-		}
+		}*/
 	}
 });
+
+//Schedlr.stores.event_store.load();
