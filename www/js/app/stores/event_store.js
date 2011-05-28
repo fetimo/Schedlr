@@ -25,5 +25,3 @@ Schedlr.stores.event_store = new Ext.data.TreeStore({
 		}*/
 	}
 });
-
-//Schedlr.stores.event_store.load();
