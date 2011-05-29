@@ -6,7 +6,7 @@ var EventsModel = new Ext.regModel('Event', {
 		{name: 'attend',	type: 'boolean',	defaultValue: 'false'}
 	],
 	proxy: {
-		type: 'localstorage',
+		type: 'ajax',
 		id: 'event'
 	}
 });

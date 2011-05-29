@@ -1,10 +1,3 @@
-Ext.setup({
-	tabletStartupScreen: 'tablet_startup.png',
-	phoneStartupScreen: 'phone_startup.png',
-	icon: 'icon.png',
-	glossOnIcon: false,
-});
-
 //founded on the example given in the Sencha Touch docs on Nested Lists
 
 //this is a horrible way to display this information, think of something better
@@ -15,7 +8,6 @@ if(!localStorage.getItem("firstRun")) {
 //end horribleness
 
 Schedlr = new Ext.Application({
-							  
 	defaultTarget: "viewport",
 	name: "Schedlr",
 	launch: function() {

@@ -10,6 +10,9 @@
 		1C05A73613842C9300EEFC48 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 1C05A73513842C9300EEFC48 /* TODO */; };
 		1C05A73813842CA000EEFC48 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C05A73713842CA000EEFC48 /* README.md */; };
 		1C823D7D139279F80015E7C3 /* attending_store.js in Sources */ = {isa = PBXBuildFile; fileRef = 1C823D7C139279F80015E7C3 /* attending_store.js */; };
+		1C823D7F1392C07B0015E7C3 /* dynamic_store.js in Sources */ = {isa = PBXBuildFile; fileRef = 1C823D7E1392C07B0015E7C3 /* dynamic_store.js */; };
+		1C823D811392C3F30015E7C3 /* List.js in Sources */ = {isa = PBXBuildFile; fileRef = 1C823D801392C3F30015E7C3 /* List.js */; };
+		1C823D831392C40E0015E7C3 /* Itinerary.js in Sources */ = {isa = PBXBuildFile; fileRef = 1C823D821392C40E0015E7C3 /* Itinerary.js */; };
 		1CB1EBC9138ADDA8000E2B60 /* sencha-touch-debug.js in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1EBC8138ADDA8000E2B60 /* sencha-touch-debug.js */; };
 		1CB1EBCB138AE09D000E2B60 /* event_item.js in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1EBCA138AE09D000E2B60 /* event_item.js */; };
 		1CB1EBCD138AE36D000E2B60 /* store.js in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1EBCC138AE36D000E2B60 /* store.js */; };
@@ -69,7 +72,10 @@
 		1C05A73513842C9300EEFC48 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		1C05A73713842CA000EEFC48 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1C823D7C139279F80015E7C3 /* attending_store.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = attending_store.js; path = www/js/app/stores/attending_store.js; sourceTree = "<group>"; };
-		1CB1EBC8138ADDA8000E2B60 /* sencha-touch-debug.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "sencha-touch-debug.js"; path = "www/js/lib/sencha/sencha-touch-debug.js"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		1C823D7E1392C07B0015E7C3 /* dynamic_store.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = dynamic_store.js; path = www/js/app/stores/dynamic_store.js; sourceTree = "<group>"; };
+		1C823D801392C3F30015E7C3 /* List.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = List.js; path = www/js/app/views/List.js; sourceTree = "<group>"; };
+		1C823D821392C40E0015E7C3 /* Itinerary.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Itinerary.js; path = www/js/app/views/Itinerary.js; sourceTree = "<group>"; };
+		1CB1EBC8138ADDA8000E2B60 /* sencha-touch-debug.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "sencha-touch-debug.js"; path = "www/js/lib/sencha/sencha-touch-debug.js"; sourceTree = "<group>"; };
 		1CB1EBCA138AE09D000E2B60 /* event_item.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = event_item.js; path = www/js/app/models/event_item.js; sourceTree = "<group>"; };
 		1CB1EBCC138AE36D000E2B60 /* store.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = store.js; path = www/js/app/stores/store.js; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -149,6 +155,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				1C823D821392C40E0015E7C3 /* Itinerary.js */,
+				1C823D801392C3F30015E7C3 /* List.js */,
+				1C823D7E1392C07B0015E7C3 /* dynamic_store.js */,
 				1C823D7C139279F80015E7C3 /* attending_store.js */,
 				1CB1EBCC138AE36D000E2B60 /* store.js */,
 				1CB1EBCA138AE09D000E2B60 /* event_item.js */,
@@ -379,6 +388,9 @@
 				1CB1EBCB138AE09D000E2B60 /* event_item.js in Sources */,
 				1CB1EBCD138AE36D000E2B60 /* store.js in Sources */,
 				1C823D7D139279F80015E7C3 /* attending_store.js in Sources */,
+				1C823D7F1392C07B0015E7C3 /* dynamic_store.js in Sources */,
+				1C823D811392C3F30015E7C3 /* List.js in Sources */,
+				1C823D831392C40E0015E7C3 /* Itinerary.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
