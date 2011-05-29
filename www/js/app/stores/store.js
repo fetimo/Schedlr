@@ -6,14 +6,17 @@ var data = {
 		items: [{
 			text: 'Repair Choir',
 			info: 'Inspired by more than 70 Complaints Choirs all over the world, the ORF (Austrian Broadcasting Company) and Ars Electronica invited locals to get whatever has been bothering them of their chest. Regardless of whether it has to do with the environment, politics or social injustice, the complaints and repair suggestions will be put together to create the “Upper Austrian Repair Song”. An amateur choral group under direction of Wolfgang Mayer (AT) will then perform it on Linz’s Main Square.',
+			id: 101,
 			leaf: true
 		},{
 			text: 'Frozen Music',
 			info: 'That music and architecture have much in common was recognized by the great German writer Johann Wolfgang von Goethe and philosophers Arthur Schopenhauer and Friedrich Wilhelm Schelling, who called architecture silent, solidified or frozen music. \'Frozen Music\' is the title of the event that kicks off this year\'s Ars Electronica Festival and also marks the official reopening of Linz\'s Tabakfabrik. This venue, a former tobacco processing plant that\'s been closed since September 2009, is one of Austria\'s most significant industrial landmarks. Artistic interventions, performances and sound and light shows staged in the facility\'s inner courtyard will throw open imaginary doors and windows, and transport audience members deeper and deeper inside-into a world in which productivity is seemingly paralyzed but can still be perceived with all the senses.',
+			id: 102,
 			leaf: true
 		},{
 			text: 'Braun Tube Jazz Band',
 			info: 'Japanese experimental artist Ei Wada breathes new life into old TV picture tubes. He utilizes their electromagnetic properties to transform light into sound and back again. When he touches the screens, this triggers a fascinating audio & video performance in which his hands and his whole body serve as pseudo-antennas. The old-fashioned picture tube TVs and a video recorder become percussion instruments, light synthesizer and VJ/DJ equipment all rolled into one. Thus, devices that have lost their original function can be used in a new way.',
+			id: 103,
 			leaf: true
 		}]
 	},{

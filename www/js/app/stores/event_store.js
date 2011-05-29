@@ -11,18 +11,5 @@ Schedlr.stores.event_store = new Ext.data.TreeStore({
 		},
 		autoLoad: true,
 		autoSave: true
-		/*sorters: {
-			property: 'text',
-			root: 'data'
-		},
-		extraParams: {
-			format: 'json'
-		},
-		listeners: {
-			exception:function(proxy, response, orientation){
-				console.error('Failure Notification', response.responseText);
-				Ext.Msg.alert('Loading failed', response.statusText);
-			}
-		}*/
 	}
 });
