@@ -13,7 +13,7 @@ Schedlr.views.List = Ext.extend(Ext.NestedList, {
 					{xtype: 'button', ui: 'confirm', hidden: true, text:'Attend', 
 						handler: function() {
 							//add to list of events being attended
-							console.log('clicked');
+							console.log(this);
 						}
 					}
 				]
@@ -21,7 +21,6 @@ Schedlr.views.List = Ext.extend(Ext.NestedList, {
 			getDetailCard: function(item, parent) {
 				var itemData = item.attributes.record.data,
 				parentData = parent.attributes.record.data,
-				
 				detailCard = new Ext.Panel({
 					scroll: 'vertical',
 					styleHtmlContent: true,
