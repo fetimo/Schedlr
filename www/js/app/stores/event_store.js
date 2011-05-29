@@ -1,15 +1,16 @@
 Schedlr.stores.event_store = new Ext.data.TreeStore({
-	model: 'Events',
+	model: 'Event',
 	root: data,
-	storeId: 'eventStoreId',
+	storeId: 'eventStore',
 	proxy: {
 		type: 'localstorage',
-		id: 'eventsAttending',
-		url: 'store.js',
+		id: 'eventStore',
 		reader: {
 			type: 'tree',
 			root: 'items'
 		},
+		autoLoad: true,
+		autoSave: true
 		/*sorters: {
 			property: 'text',
 			root: 'data'
