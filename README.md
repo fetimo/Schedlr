@@ -20,7 +20,7 @@ This work is ultimately for coursework submission to my university, therefore if
 
 Disclaimer
 ----------
-I am in no way associated with Ars Electronica; this is a student project. 
+I am in no way associated with Ars Electronica; this is a student project. The written content for the events comes from http://new.aec.at/repair/en/ .
 
 Licensing
 ---------
