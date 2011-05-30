@@ -1,5 +1,14 @@
+var dateSelectorHandler = function() {
+	//alert(this.text);
+	Schedlr.stores.attending_store.clearFilter();
+	Schedlr.stores.attending_store.filter('date', this.text);
+};
+
 var dateSelector = new Ext.SegmentedButton({
 	margin: '15 0 15 0',
+	defaults: {
+		handler: dateSelectorHandler
+	},
 	items: [
 		{
 			text: '2/9',

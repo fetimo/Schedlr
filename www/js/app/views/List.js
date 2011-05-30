@@ -41,15 +41,10 @@ Schedlr.views.List = Ext.extend(Ext.NestedList, {
 					localStorage.setItem('attending', eventList.toString());
 					
 					Schedlr.stores.attending_store.add(item.attributes.record.data);
-					
-					//make list on itinerary view
-					/*Schedlr.views.Itinerary.add({xtype: 'itineraryList'});
-					Schedlr.views.Itinerary.doLayout();*/
+					Schedlr.stores.attending_store.sort('timeStart', 'ASC');					
 					
 					//disable attend button
 					this.disable();
-					
-					console.log(localStorage.getItem('attending'));
 				}
 				this.toolbar.getComponent(2).on('tap', attendHandler);
 				
