@@ -36,12 +36,13 @@ Schedlr.views.List = Ext.extend(Ext.NestedList, {
 				
 				//add event to localstorage
 				var attendHandler = function() {
-					// rand = Math.ceil(Math.random() * 10);
 					eventList.push(JSON.stringify(item.attributes.record.data));
 					localStorage.setItem('attending', eventList.toString());
 					
 					Schedlr.stores.attending_store.add(item.attributes.record.data);
-					Schedlr.stores.attending_store.sort('timeStart', 'ASC');					
+					Schedlr.stores.attending_store.sort('timeStart', 'ASC');
+					Schedlr.stores.attending_store.sync();
+					//Schedlr.views.ItineraryList.doComponentLayout();			
 					
 					//disable attend button
 					this.disable();

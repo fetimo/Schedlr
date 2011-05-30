@@ -1,14 +1,13 @@
 Schedlr.stores.attending_store = new Ext.data.Store({
 	model: 'Event',
-	//sortOnLoad: true,	
-	//sorters: 'timeStart',
+	autoLoad: true,
+	autoSave: true,
 	getGroupString: function(record) {
 		return record.get('timeStart');
 	},
+	proxy: {
+		type: 'localstorage',
+		id: 'attending_localstore',
+		model: 'Event'
+	}
 });
-
-/*filterOnLoad: true,
-filters: {
-	property: 'date',
-	value: 2
-}*/

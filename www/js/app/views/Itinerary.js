@@ -1,5 +1,4 @@
 var dateSelectorHandler = function() {
-	//alert(this.text);
 	Schedlr.stores.attending_store.clearFilter();
 	Schedlr.stores.attending_store.filter('date', this.text);
 };
@@ -32,6 +31,8 @@ var dateSelector = new Ext.SegmentedButton({
 	]
 });
 
+var emptyListText = (Schedlr.stores.attending_store.getCount() > 0) ? '<div class="emptyText">You have nothing planned for today.</div>' : '<div class="emptyText">Choose the events that you\'d like to attend at this year\'s Ars Electronica festival.</div>';
+
 Schedlr.views.ItineraryList = Ext.extend(Ext.List, {
 	initComponent: function() {
 		Ext.apply(this, {
@@ -39,11 +40,10 @@ Schedlr.views.ItineraryList = Ext.extend(Ext.List, {
 			itemTpl: '{text}',
 			deferEmptyText: false,
 			grouped: true,
-			//onItemDisclosure: true,
+			componentCls: '.itineraryList',
 			scroll: 'vertical',
-			emptyText: '<div class="emptyText">Choose the events that you\'d like to attend at this year\'s Ars Electronica festival.</div>',
-			height: 290,
-			width: 300
+			emptyText: emptyListText,
+			layout: 'fit'
 		});
 		Schedlr.views.ItineraryList.superclass.initComponent.apply(this, arguments);
 	}
