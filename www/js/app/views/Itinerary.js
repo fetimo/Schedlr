@@ -37,13 +37,13 @@ Schedlr.views.ItineraryList = Ext.extend(Ext.List, {
 	initComponent: function() {
 		Ext.apply(this, {
 			store: Schedlr.stores.attending_store,
-			itemTpl: '{text}',
+			itemTpl: '{text}<br><div class="metadata">{location}</div>',
 			deferEmptyText: false,
 			grouped: true,
 			componentCls: '.itineraryList',
 			scroll: 'vertical',
 			emptyText: emptyListText,
-			layout: 'fit'
+			layout: 'fit',
 		});
 		Schedlr.views.ItineraryList.superclass.initComponent.apply(this, arguments);
 	}

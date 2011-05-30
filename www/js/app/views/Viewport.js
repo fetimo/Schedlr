@@ -7,12 +7,21 @@ Schedlr.views.Wrapper = new Ext.TabPanel({
 			pack: 'center'
 		}
 	},
+	defaults: {
+		
+	},
 	items: [
 		Schedlr.views.Itinerary,
 		{
 		  xtype: 'eventsList'
 		}
-	]
+	],
+	listeners: {
+		cardswitch: function() {
+			Schedlr.stores.attending_store.clearFilter();
+			Schedlr.stores.attending_store.filter('date', dateSelector.pressedButton.text);
+		}
+	}
 });
 
 Schedlr.views.Viewport = Ext.extend(Ext.Panel, {

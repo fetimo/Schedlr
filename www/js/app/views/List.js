@@ -1,6 +1,5 @@
 Schedlr.views.List = Ext.extend(Ext.NestedList, {
 	initComponent: function() {
-		var eventList = new Array(); //instantiate here so it doesn't reset array on each record
 		Ext.apply(this, {
 			id: 'list',
 			title: 'Events',
@@ -35,14 +34,10 @@ Schedlr.views.List = Ext.extend(Ext.NestedList, {
 				this.backButton.on('tap', interceptAndHide);
 				
 				//add event to localstorage
-				var attendHandler = function() {
-					eventList.push(JSON.stringify(item.attributes.record.data));
-					localStorage.setItem('attending', eventList.toString());
-					
+				var attendHandler = function() {					
 					Schedlr.stores.attending_store.add(item.attributes.record.data);
 					Schedlr.stores.attending_store.sort('timeStart', 'ASC');
 					Schedlr.stores.attending_store.sync();
-					//Schedlr.views.ItineraryList.doComponentLayout();			
 					
 					//disable attend button
 					this.disable();
