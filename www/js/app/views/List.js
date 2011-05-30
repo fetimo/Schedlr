@@ -18,13 +18,14 @@ Schedlr.views.List = Ext.extend(Ext.NestedList, {
 					title: 'Event'
 				});
 				
+				// so the toolbar doesn't get cluttered, if text of previous card is too long then just say 'back' instead
 				if(parentData.text.length > 6){
 					this.backButton.setText('Back');
 				} else {
 					this.backButton.setText(parentData.text);
 				}
 				
-				//show the attend button when on leaf, hide when back button is tapped
+				// show the attend button when on leaf, hide when back button is tapped
 				var interceptAndHide = function() {
 					this.up('toolbar').getComponent(2).setVisible(false);
 					this.up('toolbar').getComponent(2).enable();
@@ -35,10 +36,19 @@ Schedlr.views.List = Ext.extend(Ext.NestedList, {
 				
 				//add event to localstorage
 				var attendHandler = function() {
-					var jsonStore1 = JSON.stringify(item.attributes.record.data);
-					eventList.push(jsonStore1);
+					// rand = Math.ceil(Math.random() * 10);
+					eventList.push(JSON.stringify(item.attributes.record.data));
 					localStorage.setItem('attending', eventList.toString());
+					
+					Schedlr.stores.attending_store.add(item.attributes.record.data);
+					
+					//make list on itinerary view
+					/*Schedlr.views.Itinerary.add({xtype: 'itineraryList'});
+					Schedlr.views.Itinerary.doLayout();*/
+					
+					//disable attend button
 					this.disable();
+					
 					console.log(localStorage.getItem('attending'));
 				}
 				this.toolbar.getComponent(2).on('tap', attendHandler);

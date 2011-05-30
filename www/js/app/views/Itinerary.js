@@ -1,5 +1,5 @@
 var dateSelector = new Ext.SegmentedButton({
-	margin: '15 0 0 0',
+	margin: '15 0 15 0',
 	items: [
 		{
 			text: '3/9',
@@ -24,38 +24,34 @@ Schedlr.views.ItineraryList = Ext.extend(Ext.List, {
 	initComponent: function() {
 		Ext.apply(this, {
 			store: Schedlr.stores.attending_store,
-			itemTpl: '{text}'
+			itemTpl: '{text}',
+			deferEmptyText: false,
+			scroll: false,
+			emptyText: '<div class="emptyText">Choose the events that you\'d like to attend at this year\'s Ars Electronica festival.</div>',
+			height: 500,
+			width: 300
 		});
-		Schedlr.views.Itinerary.superclass.initComponent.apply(this, arguments);
+		Schedlr.views.ItineraryList.superclass.initComponent.apply(this, arguments);
 	}
 });
 
 Ext.reg('itineraryList', Schedlr.views.ItineraryList);
 
-Schedlr.views.Itinerary = Ext.extend(Ext.Panel, {
-	initComponent: function() {
-		Ext.apply(this, {
-			title: 'Itinerary',
-			iconCls: 'calendar2',
-			layout: 'vbox',
-			scroll: 'vertical',
-			dockedItems: [
-				{
-					dock: 'top',
-					xtype: 'toolbar',
-					ui: 'light',
-					title: 'Your Itinerary'
-				}
-			],
-			items: [
-				dateSelector,
-				{
-				//	xtype: 'itineraryList'
-				}
-			]
-		});
-		Schedlr.views.Itinerary.superclass.initComponent.apply(this, arguments);
-	}
+Schedlr.views.Itinerary = new Ext.Panel({
+	title: 'Itinerary',
+	iconCls: 'calendar2',
+	layout: 'vbox',
+	//scroll: 'vertical',
+	dockedItems: [
+		{
+			dock: 'top',
+			xtype: 'toolbar',
+			ui: 'light',
+			title: 'Your Itinerary'
+		}
+	],
+	items: [
+		dateSelector,
+		{xtype: 'itineraryList'}
+	]
 });
-
-Ext.reg('itineraryView', Schedlr.views.Itinerary);

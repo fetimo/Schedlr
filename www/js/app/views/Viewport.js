@@ -8,9 +8,7 @@ Schedlr.views.Wrapper = new Ext.TabPanel({
 		}
 	},
 	items: [
-		{	
-		  xtype: 'itineraryView'
-		},
+		Schedlr.views.Itinerary,
 		{
 		  xtype: 'eventsList'
 		}

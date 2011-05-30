@@ -1,17 +1,8 @@
 //founded on the example given in the Sencha Touch docs on Nested Lists
 
-//this is a horrible way to display this information, think of something better
-if(!localStorage.getItem("firstRun")) {
-	alert('Choose the events that you\'d like to attend at this year\'s Ars Electronica festival.');
-	localStorage.setItem("firstRun", "false");
-}
-//end horribleness
-
-Schedlr = new Ext.Application({
-	defaultTarget: "viewport",
-	name: "Schedlr",
+Ext.regApplication({
+	name: 'Schedlr',
 	launch: function() {
-		//render viewport
 		this.views.viewport = new this.views.Viewport();
 	}
 });

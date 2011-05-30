@@ -1,3 +1,3 @@
-if(localStorage.getItem('attending' != '')) {
-	JSON.parse(makeStore);
-}
+/*if(localStorage.getItem('attending' != '')) {
+*	JSON.parse(localStorage.getItem('attending'));
+}*/
