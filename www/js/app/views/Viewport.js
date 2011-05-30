@@ -7,9 +7,6 @@ Schedlr.views.Wrapper = new Ext.TabPanel({
 			pack: 'center'
 		}
 	},
-	defaults: {
-		
-	},
 	items: [
 		Schedlr.views.Itinerary,
 		{

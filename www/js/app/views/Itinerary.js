@@ -4,10 +4,11 @@ var dateSelectorHandler = function() {
 };
 
 var dateSelector = new Ext.SegmentedButton({
-	margin: '15 0 15 0',
+	margin: '15 0 15 15',
 	defaults: {
 		handler: dateSelectorHandler
 	},
+	cls: 'segmentedButton',
 	items: [
 		{
 			text: '2/9',
@@ -43,7 +44,7 @@ Schedlr.views.ItineraryList = Ext.extend(Ext.List, {
 			componentCls: '.itineraryList',
 			scroll: 'vertical',
 			emptyText: emptyListText,
-			layout: 'fit',
+			//layout: 'vbox',
 		});
 		Schedlr.views.ItineraryList.superclass.initComponent.apply(this, arguments);
 	}
@@ -54,7 +55,7 @@ Ext.reg('itineraryList', Schedlr.views.ItineraryList);
 Schedlr.views.Itinerary = new Ext.Panel({
 	title: 'Itinerary',
 	iconCls: 'calendar2',
-	layout: 'vbox',
+	//layout: 'vbox',
 	dockedItems: [
 		{
 			dock: 'top',

@@ -4,6 +4,6 @@ Ext.regApplication({
 	name: 'Schedlr',
 	launch: function() {
 		this.views.viewport = new this.views.Viewport();
-		Schedlr.stores.attending_store.filter('date', '2/9');
+		Schedlr.stores.attending_store.filter('date', dateSelector.pressedButton.text);
 	}
 });

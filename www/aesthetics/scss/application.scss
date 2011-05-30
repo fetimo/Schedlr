@@ -1,24 +1,18 @@
 // Variable overrides
- 
+$lightGrey: #999;
+
 // Include Sencha Touch styles
 @import 'sencha-touch/default/all';
 @include sencha-panel;
 @include sencha-buttons;
 @include sencha-tabs;
 @include sencha-toolbar;
-@include sencha-carousel;
 @include sencha-list;
 @include sencha-layout;
-@include sencha-loading-spinner;
-
 @include pictos-iconmask('calendar2');
 @include pictos-iconmask('calendar_add');
  
 // Define custom styles
-a {
-	text-decoration: none;
-	color: #fff;
-}
 
 h2 {
 	font-size: 1.3em;
@@ -31,14 +25,18 @@ h2 {
 
 .emptyText {
     text-align: center;
-    color: #999;
+    color: $lightGrey;
 }
 
 .itineraryList {
-	background: #eee
+	background: #eee;
+}
+
+.metadata:before{
+	content: 'Location: ';
 }
 
 .metadata {
 	font-size: 80%;
-	color: #999;
+	color: $lightGrey;
 }
