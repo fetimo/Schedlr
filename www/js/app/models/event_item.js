@@ -1,8 +1,13 @@
 var EventsModel = new Ext.regModel('Event', {
 	fields: [
-		{name: 'text',	type: 'string'},
-		{name: 'info',	type: 'string'},
-		{name: 'leaf',	type: 'boolean'}
+		{name: 'text',			type: 'string'},
+		{name: 'info',			type: 'string'},
+		{name: 'date',			type: 'int'},
+		{name: 'timeStart',		type: 'string'},
+		{name: 'timeFinish',	type: 'int'},
+		{name: 'location',		type: 'string'},
+		{name: 'category',		type: 'string'},
+		{name: 'leaf',			type: 'boolean'}
 	],
 	proxy: {
 		type: 'ajax',

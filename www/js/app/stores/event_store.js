@@ -3,7 +3,7 @@ Schedlr.stores.event_store = new Ext.data.TreeStore({
 	root: data,
 	storeId: 'eventStore',
 	proxy: {
-		type: 'localstorage',
+		type: 'ajax',
 		id: 'eventStore',
 		reader: {
 			type: 'tree',

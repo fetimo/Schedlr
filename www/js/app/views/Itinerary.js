@@ -2,8 +2,11 @@ var dateSelector = new Ext.SegmentedButton({
 	margin: '15 0 15 0',
 	items: [
 		{
-			text: '3/9',
+			text: '2/9',
 			pressed: true
+		},
+		{
+			text: '3/9'
 		},
 		{
 			text: '4/9'
@@ -26,9 +29,11 @@ Schedlr.views.ItineraryList = Ext.extend(Ext.List, {
 			store: Schedlr.stores.attending_store,
 			itemTpl: '{text}',
 			deferEmptyText: false,
-			scroll: false,
+			grouped: true,
+			//onItemDisclosure: true,
+			scroll: 'vertical',
 			emptyText: '<div class="emptyText">Choose the events that you\'d like to attend at this year\'s Ars Electronica festival.</div>',
-			height: 500,
+			height: 290,
 			width: 300
 		});
 		Schedlr.views.ItineraryList.superclass.initComponent.apply(this, arguments);
@@ -41,7 +46,6 @@ Schedlr.views.Itinerary = new Ext.Panel({
 	title: 'Itinerary',
 	iconCls: 'calendar2',
 	layout: 'vbox',
-	//scroll: 'vertical',
 	dockedItems: [
 		{
 			dock: 'top',
