@@ -16,7 +16,7 @@ Tim Stone (www.fetimo.com)
 
 Acknowledgements
 ----------------
-I'd like to thank @nelstrom for his awesome screencasts on Sencha Touch as well as his support through the forums. I'd also like to thank @stupler, @gwilli, @scpgt, @joelcarr and @jpuink for their help and support during this project; it's greatly appreciated.
+I'd like to thank @nelstrom for his awesome screencasts on Sencha Touch as well as his support through the forums. I'd also like to thank @stupler, @gwilli, @joelcarr and @jpuink for their help and support during this project; it's greatly appreciated. Special thanks to @scpgt for being a fun and brilliant technical tutor over the past two years!
 
 Contribute
 ----------
