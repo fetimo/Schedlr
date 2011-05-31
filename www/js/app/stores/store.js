@@ -291,7 +291,7 @@ var data = {
 		   "location": "Bau 1 OG 3", 
 			"leaf": true
 		},{
-			"text":"Wissensturm ‚Äì Lernort der Zukunft",
+			"text":"Wissensturm - Lernort der Zukunft",
 			"info":"Linz’s Wissensturm—the “tower of knowledge” that houses an adult continuing education facility (VHS), public library, media workshop (MWL) and a self-learning center (LeWis)—has made a name for itself worldwide as a promising approach to providing knowledge-based services. During the Ars Electronica Festival, Wissensturm will set up shop on the Tabakfabrik grounds.",
 			"timeStart": "08:00",
 			"timeFinish": 1500,
