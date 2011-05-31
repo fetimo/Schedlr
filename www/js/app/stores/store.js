@@ -10,7 +10,6 @@ var data = {
 			"timeStart": "19:00",
 			"timeFinish": 2000,
 			"location": "Main Square",
-			"category": "Repair Our Society",
 			"leaf": true
 		},{
 			"text":"Frozen Music",
@@ -19,7 +18,6 @@ var data = {
 			"timeFinish": 2300, 
 			"date": "3/9", 
 			"location": "Tabakfabrik Linz", 
-			"category": "Opening", 
 			"leaf": true
 		},{
 			"text":"Braun Tube Jazz Band",
@@ -28,7 +26,6 @@ var data = {
 			"timeFinish": 1830, 
 			"date": "2/9",
 			"location": "Magazine OG 4", 
-			"category": "Repair the Environment", 
 			"leaf": true
 		}]
 	},{
@@ -40,7 +37,6 @@ var data = {
 			"timeFinish": 1900,
 			"date": "3/9", 
 			"location": "Hauptplatz, Tabakfabrik Linz", 
-			"category": "Opening",
 			"leaf": true
 		}]
 	},{
@@ -52,7 +48,6 @@ var data = {
 			"timeFinish": 1230, 
 			"date": "3/9", 
 			"location": "Bau 2 EG", 
-			"category": "Repair the Environment", 
 			"leaf": true
 		},{
 			"text":"Was Menschen bewegt",
@@ -61,7 +56,6 @@ var data = {
 			"timeFinish": 1830, 
 			"date": "3/9", 
 			"location": "Bau 2 EG", 
-			"category": "Repair the Environment",
 			"leaf": true
 		},{
 			"text":"Doing the right thing",
@@ -70,7 +64,6 @@ var data = {
 			"timeFinish": 1230, 
 			"date": "6/9", 
 			"location": "Bau 2 EG", 
-			"category": "Repair the Environment",
 			"leaf": true
 		},{
 			"text":"The future of the Tabakfabrik Linz",
@@ -79,7 +72,6 @@ var data = {
 			"timeFinish": 2000,
 			"date": "7/9",
 			"location": "Bau 2 EG",
-			"category": "New Work Factory",
 			"leaf": true
 		},{
 			"text":"Richard Sennett - The Craftsmen",
@@ -88,7 +80,6 @@ var data = {
 			"timeFinish": 2000,
 			"date": "2/9",
 			"location": "Bau 2 EG",
-			"category": "New Work Factory",
 			"leaf": true
 		},{
 			"text":"Tele-Internet",
@@ -97,7 +88,6 @@ var data = {
 			"timeFinish": 1230,
 			"date": "5/9",
 			"location": "Bau 1 OG",
-			"category": "Repair Our Society",
 			"leaf": true
 		},{
 			"text":"Open Source Life Symposium",
@@ -106,7 +96,6 @@ var data = {
 			"timeFinish": 1830,
 			"date": "4/9",
 			"location": "Bau 2 EG",
-			"category": "Repair Our Society",
 			"leaf": true
 		},{
 			"text":"Radio FRO Conference: Renaming Media",
@@ -115,7 +104,6 @@ var data = {
 			"timeFinish": 1800,
 			"date": "4/9",
 			"location": "Bau 1 OG 3",
-			"category": "Repair Our Society",
 			"leaf": true
 		}]
 	},{
@@ -127,7 +115,6 @@ var data = {
 			"timeFinish": 1830, 
 			"date": "2/9",
 			"location": "Bau 2 OG 4", 
-			"category": "Repair the Environment",
 			"leaf": true
 		},{
 			"text":"Gyre",
@@ -136,7 +123,6 @@ var data = {
 		    "timeFinish": 1830, 
 		    "date": "2/9", 
 		    "location": "REPAIR Lounge", 
-		    "category": "Repair the Environment",
 			"leaf": true
 		},{
 			"text":"Dies irae - Remembering 108 EB",
@@ -145,7 +131,6 @@ var data = {
 			"timeFinish": 1830, 
 		   "date": "2/9",
 		   "location": "Magazine OG 4", 
-		   "category": "Repair the Environment",
 			"leaf": true
 		},{
 			"text":"Lux aeterna - incandescent wires",
@@ -154,7 +139,6 @@ var data = {
 		   "timeFinish": 1830, 
 		   "date": "2/9",
 		   "location": "Magazine OG 6", 
-		   "category": "Repair the Environment",
 			"leaf": true
 		},{
 			"text":"Das Mobile Ö1 Atelier - The Haiti-House",
@@ -163,7 +147,6 @@ var data = {
 		   "timeFinish": 1900, 
 		   "date": "3/9",
 		   "location": "Hauptplatz", 
-		   "category": "Design for Repair", 
 			"leaf": true
 		},{
 			"text":"PROBEN",
@@ -172,7 +155,6 @@ var data = {
 		   "timeFinish": 1830, 
 		   "date": "2/9",
 		   "location": "Bau 1 OG 3", 
-		   "category": "Design for Repair",
 			"leaf": true
 		},{
 			"text":"PappLab",
@@ -181,7 +163,6 @@ var data = {
 		   "timeFinish": 1830, 
 		   "date": "2/9",
 		   "location": "Bau 1 EG", 
-		   "category": "Design for Repair",
 			"leaf": true
 		},{
 			"text":"platform21: Stop Recycling, Start Repairing",
@@ -190,7 +171,6 @@ var data = {
 		   "timeFinish": 1830, 
 		   "date": "2/9",
 		   "location": "Bau 1 OG 3", 
-		   "category": "Design for Repair", 
 			"leaf": true
 		},{
 			"text":"plant",
@@ -199,7 +179,6 @@ var data = {
 		   "timeFinish": 1830, 
 		   "date": "4/9",
 		   "location": "REPAIR Lounge", 
-		   "category": "Design for Repair",
 			"leaf": true
 		},{
 			"text":"Growth Assembly",
@@ -208,7 +187,6 @@ var data = {
 			"timeFinish": 1400,
 			"date": "7/9",
 			"location": "Magazine OG 1",
-			"category": "Design for Repair",
 			"leaf": true
 		},{
 			"text":"Ocean of Light: Surface",
@@ -217,7 +195,6 @@ var data = {
 			"timeFinish": 1000,
 			"date": "7/9",
 			"location": "Magazine EG",
-			"category": "Design for Repair",
 			"leaf": true
 		},{
 			"text":"Repair Fair",
@@ -226,7 +203,6 @@ var data = {
 			"timeFinish": 1200,
 			"date": "6/9",
 			"location": "Info Lounge",
-			"category": "Design for Repair",
 			"leaf": true
 		},{
 			"text":"Frisiersalon in funf Akten",
@@ -235,7 +211,6 @@ var data = {
 			"timeFinish": 1500,
 			"date": "4/9",
 			"location": "Hof",
-			"category": "Design for Repair",
 			"leaf": true
 		},{
 			"text":"NANK",
@@ -244,7 +219,6 @@ var data = {
 			"timeFinish": 2000,
 			"date": "6/9",
 			"location": "Bau 2 OG 1, Hof",
-			"category": "New Work Factory",
 			"leaf": true
 		},{
 			"text":"Repairing the global imbalance: Eight goals for one world",
@@ -253,7 +227,6 @@ var data = {
 			"timeFinish": 1230,
 			"date": "4/9",
 			"location": "Bau 2 OG 1",
-			"category": "New Work Factory",
 			"leaf": true
 		},{
 			"text":"Power of mind 4 - Dissociative Defense",
@@ -262,7 +235,6 @@ var data = {
 			"timeFinish": 900,
 			"date": "3/9",
 			"location": "Bau 1 OG 3",
-			"category": "Repair Our Society",
 			"leaf": true
 		},{
 			"text":"Nine Eyes of Google Street View",
@@ -271,7 +243,6 @@ var data = {
 			"timeFinish": 1100,
 			"date": "4/9",
 			"location": "Magazine OG 3",
-			"category": "Repair Our Society",
 			"leaf": true
 		}]
 	},{
@@ -283,7 +254,6 @@ var data = {
 			"timeFinish": 1830,
 			"date": "6/9",
 			"location": "Bau 1 OG 3",
-			"category": "Repair Our Society",
 			"leaf": true
 		},{
 			"text":"Requiem aeternam dona eis - plastic forever",
@@ -292,7 +262,6 @@ var data = {
 		   "timeFinish": 1830, 
 		   "date": "2/9",
 		   "location": "Magazine OG 5", 
-		   "category": "Repair the Environment", 
 			"leaf": true
 		},{
 			"text":"Plastic Planet",
@@ -301,7 +270,6 @@ var data = {
 		   "timeFinish": 1830, 
 		   "date": "2/9",
 		   "location": "Magazine OG 5", 
-		   "category": "Repair the Environment", 
 			"leaf": true
 		},{
 			"text":"Addicted to plastic",
@@ -310,7 +278,6 @@ var data = {
 		   "timeFinish": 1830, 
 		   "date": "2/9",
 		   "location": "Magazine OG 5", 
-		   "category": "Repair the Environment", 
 			"leaf": true
 		}]
 	}, {
@@ -322,7 +289,6 @@ var data = {
 		   "timeFinish": 1830, 
 		   "date": "5/9",
 		   "location": "Bau 1 OG 3", 
-		   "category": "Design for Repair", 
 			"leaf": true
 		},{
 			"text":"Wissensturm ‚Äì Lernort der Zukunft",
@@ -331,7 +297,6 @@ var data = {
 			"timeFinish": 1500,
 			"date": "4/9",
 			"location": "Bau 2 OG 1, Hof",
-			"category": "New Work Factory",
 			"leaf": true
 		},{
 			"text":"Die Gemeinwohl-Ökonomie, das Wirtschaftsmodell der Zukunft",
@@ -340,7 +305,6 @@ var data = {
 			"timeFinish": 2100,
 			"date": "3/9",
 			"location": "Bau 1 OG 3",
-			"category": "New Work Factory",
 			"leaf": true
 		},{
 			"text":"Clean IT",
@@ -349,7 +313,6 @@ var data = {
 			"timeFinish": 1600,
 			"date": "4/9",
 			"location": "Bau 1 OG 3",
-			"category": "New Work Factory",
 			"leaf": true
 		},{
 			"text":"The Windowfarms Project",
@@ -358,7 +321,6 @@ var data = {
 		   "timeFinish": 1830, 
 		   "date": "2/9",
 		   "location": "Bau 2 OG 1 & 2", 
-		   "category": "Repair the Environment",
 			"leaf": true
 		}]
 	}]

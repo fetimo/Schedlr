@@ -1,14 +1,16 @@
 var dateSelectorHandler = function() {
 	Schedlr.stores.attending_store.clearFilter();
 	Schedlr.stores.attending_store.filter('date', this.text);
+	Schedlr.views.ItineraryList.applyEmptyText();
 };
 
 var dateSelector = new Ext.SegmentedButton({
 	margin: '15 0 15 15',
+	centered: true,
+	cls: 'dateSelectorButton',
 	defaults: {
 		handler: dateSelectorHandler
 	},
-	cls: 'segmentedButton',
 	items: [
 		{
 			text: '2/9',
@@ -38,13 +40,13 @@ Schedlr.views.ItineraryList = Ext.extend(Ext.List, {
 	initComponent: function() {
 		Ext.apply(this, {
 			store: Schedlr.stores.attending_store,
+			flex: 2,
 			itemTpl: '{text}<br><div class="metadata">{location}</div>',
 			deferEmptyText: false,
 			grouped: true,
-			componentCls: '.itineraryList',
+			componentCls: 'itineraryList',
 			scroll: 'vertical',
-			emptyText: emptyListText,
-			//layout: 'vbox',
+			emptyText: emptyListText
 		});
 		Schedlr.views.ItineraryList.superclass.initComponent.apply(this, arguments);
 	}
@@ -55,7 +57,6 @@ Ext.reg('itineraryList', Schedlr.views.ItineraryList);
 Schedlr.views.Itinerary = new Ext.Panel({
 	title: 'Itinerary',
 	iconCls: 'calendar2',
-	//layout: 'vbox',
 	dockedItems: [
 		{
 			dock: 'top',
@@ -67,5 +68,9 @@ Schedlr.views.Itinerary = new Ext.Panel({
 	items: [
 		dateSelector,
 		{xtype: 'itineraryList'}
-	]
+	],
+	layout: {
+		type: 'vbox',
+		align: 'left'
+	}
 });

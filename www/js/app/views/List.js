@@ -7,6 +7,7 @@ Schedlr.views.List = Ext.extend(Ext.NestedList, {
 			layout: 'card',
 			store: Schedlr.stores.event_store,
 			useTitleAsBackText: false,
+			itemCls: 'list-item-parent',
 			getDetailCard: function (item, parent) {
 				var itemData = item.attributes.record.data,
 				parentData = parent.attributes.record.data,

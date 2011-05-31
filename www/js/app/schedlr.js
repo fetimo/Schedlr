@@ -5,5 +5,6 @@ Ext.regApplication({
 	launch: function() {
 		this.views.viewport = new this.views.Viewport();
 		Schedlr.stores.attending_store.filter('date', dateSelector.pressedButton.text);
+		Schedlr.stores.attending_store.sort('timeStart', 'ASC');
 	}
 });

@@ -32,11 +32,14 @@ h2 {
 	background: #eee;
 }
 
-.metadata:before{
-	content: 'Location: ';
-}
-
 .metadata {
 	font-size: 80%;
 	color: $lightGrey;
+}
+
+.list-item-parent {
+    background: url(images/default/chevron-normal.png) no-repeat scroll right center;
+	color: red;
+    -webkit-background-origin: content-box;
+    -webkit-background-size: 1ex 1.5ex;
 }
