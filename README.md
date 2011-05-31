@@ -14,6 +14,10 @@ Created By
 ----------
 Tim Stone (www.fetimo.com)
 
+Acknowledgements
+----------------
+I'd like to thank @nelstrom for his awesome screencasts on Sencha Touch as well as his support through the forums. I'd also like to thank @stupler, @gwilli, @scpgt, @joelcarr and @jpuink for their help and support during this project; it's greatly appreciated.
+
 Contribute
 ----------
 This work is ultimately for coursework submission to my university, therefore if you wish to contribute you'll have to fork this work.
