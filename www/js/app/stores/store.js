@@ -22,9 +22,9 @@ var data = {
 		},{
 			"text":"Braun Tube Jazz Band",
 			"info":"Japanese experimental artist Ei Wada breathes new life into old TV picture tubes. He utilizes their electromagnetic properties to transform light into sound and back again. When he touches the screens, this triggers a fascinating audio & video performance in which his hands and his whole body serve as pseudo-antennas. The old-fashioned picture tube TVs and a video recorder become percussion instruments, light synthesizer and VJ/DJ equipment all rolled into one. Thus, devices that have lost their original function can be used in a new way.",
-			"timeStart": "15:00", 
+			"timeStart": "13:00", 
 			"timeFinish": 1830, 
-			"date": "2/9",
+			"date": "5/9",
 			"location": "Magazine OG 4", 
 			"leaf": true
 		}]
@@ -111,7 +111,7 @@ var data = {
 		"items": [{
 			"text":"Seh-Forschung",
 			"info":"Since 1968, scientist-artist Cornelia Hesse-Honegger has been painting pictures of flies and other bugs that have mutated as a result of environmental contamination and atomic radiation. Since the Chernobyl meltdown in 1986, she has collected more than 16,000 insects in the fallout zones of Chernobyl and nuclear facilities in Europe and the US. Her studies show that these plants severely harm the environment. The highest rate of contamination is 22% in the area of La Hague, France; the expected value should be approximately 1%. It’s forbidden to take pictures inside the exhibition.",
-			"timeStart": "15:00", 
+			"timeStart": "11:00", 
 			"timeFinish": 1830, 
 			"date": "2/9",
 			"location": "Bau 2 OG 4", 
@@ -119,7 +119,7 @@ var data = {
 		},{
 			"text":"Gyre",
 			"info":"Chris Jordan looks critically at the dark side of our global mass production and consumption society. It is hard to communicate the environmental impact our way of life has on the planet, because most phenomena are invisible and spread across the earth in millions of separate places. There is no Mount Everest of waste that we can make a pilgrimage to and behold the sobering aggregate of our discarded stuff, seeing and feeling it viscerally with our senses. His work “Gyre” depicts 2.4 million pieces of plastic, equal to the estimated number of pounds of plastic pollution that enter the world’s oceans every hour. All of the plastic in his image was collected from the Pacific Ocean.",
-			"timeStart": "15:00", 
+			"timeStart": "10:00", 
 		    "timeFinish": 1830, 
 		    "date": "2/9", 
 		    "location": "REPAIR Lounge", 
@@ -128,14 +128,14 @@ var data = {
 			"text":"Dies irae - Remembering 108 EB",
 			"info":"Four internal combustion engines hang from the ceiling, awaiting their resuscitation. They’ll be fired up only once during the festival and join their voices in a droning, exhaust-belching song of lamentation. A reminiscence of “108 EB – Chamber Music for Four Motors and Service Personnel,” the legendary project with which Hubert Lepka and Lawine Torren created a sensation in 1989.",
 			"timeStart": "15:00", 
-			"timeFinish": 1830, 
+			"timeFinish": 0930, 
 		   "date": "2/9",
 		   "location": "Magazine OG 4", 
 			"leaf": true
 		},{
 			"text":"Lux aeterna - incandescent wires",
 			"info":"The meditative glowing of the incandescent wire, pulsating, weak and reddish, before it reaches its maximum output giving off blazing bright light, uncertain as to whether it means the beginning or the end.",
-			 "timeStart": "15:00", 
+			 "timeStart": "14:00", 
 		   "timeFinish": 1830, 
 		   "date": "2/9",
 		   "location": "Magazine OG 6", 
@@ -151,9 +151,9 @@ var data = {
 		},{
 			"text":"PROBEN",
 			"info":"The PROBEN (Trials) exhibition features objects designed and produced between 1981 and 2009 by design students at the HFBK-University of Fine Arts Hamburg. All are fully functional, full scale model vehicles-for example, sleds, concept cars, mopeds and scooters, a bicycle powered by a cordless screwdriver and an ultra-light long-distance cruiser propelled by rubber bands. Here, the accent is on bringing forth an actual object, the direct implementation of an idea in the form of a prototype.",
-			 "timeStart": "15:00", 
+			 "timeStart": "08:00", 
 		   "timeFinish": 1830, 
-		   "date": "2/9",
+		   "date": "5/9",
 		   "location": "Bau 1 OG 3", 
 			"leaf": true
 		},{
@@ -161,21 +161,21 @@ var data = {
 			"info":"The task: creating exhibition architecture to be used only for a nine-day festival. The big question: Doesn’t repairing the world call for an aesthetic paradigm shift too? The simple answer: the papplab principle. To make exhibition architecture, fold cardboard (Papp in German) cartons and add adhesive tape. A product that, in the world of commerce, is merely packaging and thus of secondary importance becomes a key material serving countless functions: walls, tables, benches and chill-out zones. Folks, we’re not just talking about paper cups and plates here; the whole damn hospitality establishment is being constructed of these materials—over 2.5 acres of cardboard and miles of adhesive tape. The aim: building in a way that is inexpensive, environmentally friendly, experimental and light. And in the spirit of audience participation, installation visitors are invited to build their own repair tools either in a workshop or simply as an act of ad lib creativity.",
 			"timeStart": "15:00", 
 		   "timeFinish": 1830, 
-		   "date": "2/9",
+		   "date": "6/9",
 		   "location": "Bau 1 EG", 
 			"leaf": true
 		},{
 			"text":"platform21: Stop Recycling, Start Repairing",
 			"info":"Platform21 was a design platform based in Amsterdam (NL), aiming to positively influence the relationship between user and product. Through their projects they question today’s society, reveal the making process, and stimulate dialogue and the sharing of creative knowledge. During the Ars Electronica 2010 they will show examples of their past work and offer you the chance to learn about some of their creative repair methods.",
-			 "timeStart": "15:00", 
+			 "timeStart": "12:00", 
 		   "timeFinish": 1830, 
-		   "date": "2/9",
+		   "date": "5/9",
 		   "location": "Bau 1 OG 3", 
 			"leaf": true
 		},{
 			"text":"plant",
 			"info":"After his first work, a sunflower-shaped robot called 'Himawari' (2008), artist and visual designer Akira Nakayasu continued his research in the field of robotic plants. His latest worked, simply called 'plant', is an interactive installation inspired by the vision of grass blowing in the wind. The robotic plant has 169 artificial leaves, which are controlled by using shape memory alloy actuators. Each leaf reacts independently to movement like an approaching hand by moving slowly in the virtual wind.",
-			"timeStart": "15:00", 
+			"timeStart": "11:00", 
 		   "timeFinish": 1830, 
 		   "date": "4/9",
 		   "location": "REPAIR Lounge", 
@@ -215,7 +215,7 @@ var data = {
 		},{
 			"text":"NANK",
 			"info":"Neue Arbeit Neue Kultur (new work new culture) is a hybrid format—part trade fair, part performance. How can people use a broad spectrum of technologies to manufacture  products themselves? This experiment’s aim is to completely rethink work and, with a liberated attitude, to experience it anew. To do this job, NANK utilizes two elements:  Community Production demonstrates technologies having to do with energy, production, housing, mobility, work, food and health; in Presence, an open deliberation space, participants will elaborate on new work, presence and belonging.",
-			"timeStart": "15:00",
+			"timeStart": "08:00",
 			"timeFinish": 2000,
 			"date": "6/9",
 			"location": "Bau 2 OG 1, Hof",
@@ -258,9 +258,9 @@ var data = {
 		},{
 			"text":"Requiem aeternam dona eis - plastic forever",
 			"info":"The plastic bag as cultural monument. The Municipal Archive of Passau, Germany has collected thousands of plastic bags that document the transition of the culture and the Zeitgeist since the 1950s. Now, in more than 20 countries, the use of plastic bags is subject to strict regulations and even fines. Three films impressively demonstrate why this is so. A wind tunnel in which a vast assortment of plastic bags elegantly and nimbly make their final rounds before the recycling process resurrects their lifecycle.", 
-		   "timeStart": "15:00", 
+		   "timeStart": "19:00", 
 		   "timeFinish": 1830, 
-		   "date": "2/9",
+		   "date": "3/9",
 		   "location": "Magazine OG 5", 
 			"leaf": true
 		},{
@@ -274,9 +274,9 @@ var data = {
 		},{
 			"text":"Addicted to plastic",
 			"info":"For better and for worse, no ecosystem or segment of human activity has escaped the shrink-wrapped grasp of plastic. For more than 15 years, award-winning filmmaker Ian Connacher has been documenting solutions to environmental issues. His latest documentary is a global journey to investigate what we really know about the material of a thousand uses and why there’s so darn much of it. On the way we discover a toxic legacy, and the men and women dedicated to cleaning it up.", 
-		   "timeStart": "15:00", 
+		   "timeStart": "14:00", 
 		   "timeFinish": 1830, 
-		   "date": "2/9",
+		   "date": "7/9",
 		   "location": "Magazine OG 5", 
 			"leaf": true
 		}]
@@ -317,9 +317,9 @@ var data = {
 		},{
 			"text":"The Windowfarms Project",
 			"info":"The Windowfarms Project is a fast-growing web platform that helps city dwellers grow food in their apartments year-round and channels their innovations into an open research framework for the future of urban agriculture. Over 14,000 participants are building these compact vertical hydroponic gardens in windows around the world, proposing and testing design modifications, and experimenting with different vegetables and nutrients.", 
-		   "timeStart": "15:00", 
+		   "timeStart": "10:00", 
 		   "timeFinish": 1830, 
-		   "date": "2/9",
+		   "date": "7/9",
 		   "location": "Bau 2 OG 1 & 2", 
 			"leaf": true
 		}]

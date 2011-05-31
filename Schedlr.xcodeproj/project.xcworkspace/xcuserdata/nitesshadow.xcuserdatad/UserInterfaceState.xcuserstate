@@ -7454,7 +7454,7 @@
 		<string>IDEWorkspaceTabControllerDesignAreaSplitView</string>
 		<string>IDEShowUtilities</string>
 		<string>AssistantEditorsLayout</string>
-		<string>Itinerary.js</string>
+		<string>store.js</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7661,7 +7661,7 @@
 				<integer>488</integer>
 			</dict>
 		</dict>
-		<string>Itinerary.js</string>
+		<string>store.js</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7674,7 +7674,7 @@
 				<integer>490</integer>
 			</dict>
 		</dict>
-		<string>views</string>
+		<string>stores</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -7751,7 +7751,7 @@
 				<integer>74</integer>
 			</dict>
 			<key>NS.string</key>
-			<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/views/Itinerary.js</string>
+			<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/stores/store.js</string>
 		</dict>
 		<dict>
 			<key>$class</key>
@@ -8151,9 +8151,9 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>HideAllIssues</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
-		<real>328571654.67161101</real>
-		<string>{264, 1249}</string>
-		<string>{949, 0}</string>
+		<real>328572497.456348</real>
+		<string>{2498, 2807}</string>
+		<string>{26709, 0}</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
 		<dict>
 			<key>$class</key>
@@ -8172,7 +8172,7 @@
 				<integer>540</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/views/Itinerary.js</string>
+		<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/stores/store.js</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9389,8 +9389,8 @@
 		<string>Schedlr</string>
 		<string>js</string>
 		<string>app</string>
-		<string>views</string>
-		<string>Itinerary.js</string>
+		<string>stores</string>
+		<string>store.js</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9425,7 +9425,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>669</integer>
+					<integer>668</integer>
 				</dict>
 			</array>
 		</dict>
@@ -9566,11 +9566,10 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>668</integer>
+					<integer>658</integer>
 				</dict>
 			</array>
 		</dict>
-		<string>stores</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9597,10 +9596,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>658</integer>
+					<integer>669</integer>
 				</dict>
 			</array>
 		</dict>
+		<string>views</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -16880,9 +16880,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>328570898.24735397</real>
-		<string>{0, 2972}</string>
-		<string>{26798, 0}</string>
+		<real>328572497.45585197</real>
+		<string>{2498, 2807}</string>
+		<string>{26709, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -17497,7 +17497,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>328570764.21371299</real>
+		<real>328571819.83631599</real>
 		<string>{0, 287}</string>
 		<string>{125, 0}</string>
 		<dict>
@@ -18063,8 +18063,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>328571654.67112398</real>
-		<string>{264, 1249}</string>
+		<real>328571818.97029901</real>
+		<string>{0, 1399}</string>
 		<string>{949, 0}</string>
 		<dict>
 			<key>$class</key>
@@ -19918,7 +19918,7 @@
 				<integer>1324</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/views/Itinerary.js</string>
+		<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/stores/store.js</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -19936,7 +19936,7 @@
 				<integer>1326</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/views/Viewport.js</string>
+		<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/stores/attending_store.js</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -19954,7 +19954,7 @@
 				<integer>1328</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/views/List.js</string>
+		<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/views/Itinerary.js</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -19972,7 +19972,7 @@
 				<integer>1330</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/stores/store.js</string>
+		<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/views/Viewport.js</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -19990,7 +19990,7 @@
 				<integer>1332</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/stores/event_store.js</string>
+		<string>file://localhost/Users/nitesshadow/Dropbox/Schedlr/www/js/app/views/List.js</string>
 		<dict>
 			<key>$class</key>
 			<dict>
