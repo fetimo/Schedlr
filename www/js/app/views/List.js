@@ -25,10 +25,10 @@ Schedlr.views.List = Ext.extend(Ext.NestedList, {
         var itemData     = item.attributes.record.data,
             parentData   = parent.attributes.record.data,
             backButton   = this.backButton,
-            attendButton = this.up('toolbar').getComponent(2),
+            attendButton = this.toolbar.items.items[2],
             attendStore  = Schedlr.stores.attending_store,
             detailCard, attendHandler;
-            
+		
         detailCard = new Ext.Panel({
             scroll: 'vertical',
             styleHtmlContent: true,
